@@ -16,7 +16,7 @@
 <body class="body">
   <header class="header">
     <nav class="nav">
-      <a href="#" class="nav__link nav__link--flex-x">
+      <a href="#profile" class="nav__link nav__link--flex-x">
         <img src="./img/elliotgaramendi-1.jpg" alt="Elliot Garamendi" class="nav__logo">
         <div class="nav__nombre">Elliot Garamendi</div>
       </a>
@@ -37,7 +37,7 @@
 
   <main class="main">
 
-    <section class="profile py-2 px-2">
+    <section class="profile py-2 px-2" id="profile">
       <div class="profile__info">
         <p class="profile__title">Hola, yo soy</p>
         <h1 class="profile__title">Elliot Garamendi</h1>
@@ -55,7 +55,7 @@
       </span>
     </section>
 
-    <section class="experiences-section">
+    <section class="experiences-section" id="experience">
       <img src="./img/wave.svg" alt="divisor de sección" class="experiences__wave">
       <article class="experiences py-2 px-2">
         <h2 class="experiences__title">Experiencia</h2>
@@ -107,7 +107,7 @@
       <img src="./img/wave.svg" alt="divisor de sección" class="experiences__wave experiences__wave--180deg">
     </section>
 
-    <section class="skills py-2 px-2">
+    <section class="skills py-2 px-2" id="skills">
       <h2 class="skills__title">Habilidades</h2>
       <ul class="skills__list">
         <li class="skills__skill">Lógica de programación</li>
@@ -131,6 +131,12 @@
       </ul>
     </section>
   </main>
+
+  <footer>
+    <section class="contact py-2 px-2" id="contact">
+      <h2 class="contact__title">Contacto</h2>
+    </section>
+  </footer>
   <script src="./js/index.js"></script>
 </body>
 

@@ -7,13 +7,14 @@
   --text-color-inverse: white;
   --navbar-shadow-color: #e5e5e5;
   --menu-mobile-background-color: #3a4460;
+  scroll-behavior: smooth;
 }
 
 .body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--theme-color);
   color: var(--text-color);
-  padding-top: 5rem;
+  margin-top: 5rem;
 }
 
 .px-2 {
@@ -35,6 +36,12 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
+}
+
+/* enlaces del menú con secciones */
+
+section[id] {
+  scroll-margin-top: 5rem;
 }
 
 /* header */
