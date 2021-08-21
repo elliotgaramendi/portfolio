@@ -1,0 +1,137 @@
+:root {
+  --theme-color: white;
+  --primary-color: #124f88;
+  --secundary-color: #f7c331;
+  --text-color: black;
+  --text-color-inverse: white;
+  --navbar-shadow-color: #e5e5e5;
+  --menu-mobile-background-color: #3a4460;
+}
+
+.body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+}
+
+.header {
+  position: fixed;
+  box-shadow: 0 0.25rem 0.25rem var(--navbar-shadow-color);
+  top: 0;
+  left: 0;
+  background-color: var(--theme-color);
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: 4rem;
+  position: relative;
+}
+
+.nav__link::after {
+  content: '';
+  background-color: var(--secundary-color);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.1rem);
+  width: 100%;
+  height: 0.25rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.nav__link:hover {
+  color: var(--primary-color);
+}
+
+.nav__link--selected::after, .nav__link:hover::after {
+  opacity: 0.8;
+}
+
+.nav__link--flex-x {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.nav__logo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.nav__nombre {
+  margin-left: 1rem;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  padding: 0 1rem;
+}
+
+.nav__open-menu, .nav__close-menu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .nav__link {
+    color: var(--text-color-inverse);
+    font-size: 1.5rem;
+  }
+  .nav__link--flex-x {
+    color: var(--primary-color);
+  }
+  .nav__list {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    background-color: var(--menu-mobile-background-color);
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+  }
+  .nav__open-menu, .nav__close-menu {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .nav__close-menu {
+    align-self: flex-end;
+    margin: 1.5rem 2rem;
+  }
+  .nav__list--opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .nav__link::after {
+    content: none;
+  }
+  .nav__link--selected, .nav__link:hover {
+    color: var(--secundary-color);
+    transition: all 0.5s;
+  }
+}
