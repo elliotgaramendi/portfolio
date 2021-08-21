@@ -16,12 +16,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     const id = entry.target.getAttribute('id');
     const menuLink = document.querySelector(`.nav__list a[href="#${id}"]`);
-
-    // if (entry.isIntersecting) {
-    //   menuLink.classList.add('nav__link--selected');
-    // } else {
-    //   menuLink.classList.remove('nav__link--selected');
-    // }
     if (entry.isIntersecting) {
       document.querySelector('.nav__link--selected').classList.remove('nav__link--selected');
       menuLink.classList.add('nav__link--selected');
