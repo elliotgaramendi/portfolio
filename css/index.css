@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 :root {
   --theme-color: white;
   --primary-color: #124f88;
@@ -12,7 +13,31 @@
   font-family: 'Montserrat', sans-serif;
   background-color: var(--theme-color);
   color: var(--text-color);
+  padding-top: 5rem;
 }
+
+.px-2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 800px) {
+  .px-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .py-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* header */
 
 .header {
   position: fixed;
@@ -27,7 +52,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
-  max-width: 90%;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -91,6 +116,11 @@
   display: none;
 }
 
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
 @media (max-width: 800px) {
   .nav__link {
     color: var(--text-color-inverse);
@@ -133,5 +163,84 @@
   .nav__link--selected, .nav__link:hover {
     color: var(--secundary-color);
     transition: all 0.5s;
+  }
+}
+
+/* profile */
+
+.profile {
+  text-align: center;
+}
+
+.profile__info {
+  margin-bottom: 2rem;
+}
+
+.profile__title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.profile__details {
+  font-weight: 500;
+  line-height: 1.5rem;
+  max-width: 30rem;
+  margin: 1rem auto;
+}
+
+.profile__button {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.profile__button:hover {
+  filter: brightness(120%);
+  transition: all 0.5s;
+}
+
+.profile__container-img {
+  position: relative;
+}
+
+.profile__line-img {
+  position: absolute;
+  background-color: var(--secundary-color);
+  height: 1rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.profile__img {
+  max-width: 20rem;
+}
+
+@media (min-width: 800px) {
+  .profile {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .profile__title {
+    font-size: 3rem;
+  }
+  .profile__details {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    max-width: 30rem;
+    margin: 1rem auto;
+  }
+  .profile__button {
+    font-size: 2rem;
   }
 }
