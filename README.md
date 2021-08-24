@@ -1,8 +1,8 @@
 # [Personal Web Responsive YM](https://elliotxleo.github.io/personal-web-responsive-ym/) | [<img src="https://image.flaticon.com/icons/png/512/174/174857.png" height="20"/>](https://www.linkedin.com/in/elliotgaramendi/) | [<img src="https://image.flaticon.com/icons/png/512/733/733553.png" height="20"/>](https://github.com/ElliotXLeo) | [<img src="https://image.flaticon.com/icons/png/512/145/145802.png" height="20"/>](https://www.facebook.com/elliotgaramendi) | [<img src="https://image.flaticon.com/icons/png/512/1384/1384055.png" height="20"/>](https://api.whatsapp.com/send?phone=51997045329) | [<img src="https://image.flaticon.com/icons/png/512/975/975645.png" height="20"/>](https://elliotxleo.github.io/personal-web-responsive-ym/) | [<img src="https://image.flaticon.com/icons/png/512/5439/5439199.png" height="20"/>](mailto:elliotgaramendi@gmail.com) | 
 
-[![personal-web-responsive-ym](https://i.imgur.com/bbkWmes.png)](https://elliotxleo.github.io/personal-web-responsive-ym)
+[![personal-web-responsive-ym](https://i.imgur.com/nAjUlNq.png)](https://elliotxleo.github.io/personal-web-responsive-ym)
 
-Página Web Personal Responsiva donde el profesional detalla lo más relevante de su carrera, como su perfil y metas, experiencia obtenida, habilidades desarrolladas y formas de contactarlo. Se cuenta con la opción de descargar CV. Por otro lado, la web fue desarrollada bajo estándares: BEM, Mobile First, Maquetado Responsive, flexbox y grid.
+Página Web Personal Responsiva donde el profesional detalla lo más relevante de su carrera, como su perfil y metas, experiencia obtenida, habilidades desarrolladas y formas de contactarlo. Se cuenta con la opción de descargar CV y visualizar portafolio. Por otro lado, la web fue desarrollada bajo estándares: BEM, Mobile First, Maquetado Responsive, flexbox y grid.
 
 ## Instalación
 - Ubicarse en la carpeta que contendrá el proyecto
