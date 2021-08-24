@@ -3,7 +3,7 @@
 }
 
 .profile__info {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem auto;
 }
 
 .profile__title {
@@ -30,6 +30,7 @@
   padding: 0.5em;
   border-radius: 0.5rem;
   transition: all 0.5s;
+  margin: 0.25rem;
 }
 
 .profile__button:hover {
@@ -72,6 +73,6 @@
     margin: 1em auto;
   }
   .profile__button {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
