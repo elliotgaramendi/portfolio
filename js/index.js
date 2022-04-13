@@ -1,36 +1,36 @@
 'use strict';
-const menu = document.getElementById('menu');
-const openMenuButton = document.getElementById('openMenuButton');
-const closeMenuButton = document.getElementById('closeMenuButton');
+import header from './header.js';
+import profile from './profile.js';
+import experiences from './experiences.js';
+import projects from './projects.js';
+import skills from './skills.js';
+import footer from './footer.js';
 
-const toggleMenu = () => {
-  menu.classList.toggle('nav__list--opened');
-}
+const documentReady = () => {
 
-openMenuButton.addEventListener('click', toggleMenu);
-closeMenuButton.addEventListener('click', toggleMenu);
+  const method = 'GET';
+  const url = 'https://elliotxleo.github.io/api-publica/json/portafolio-elliot.json';
 
-const menuLinks = document.querySelectorAll('.nav__link');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    const id = entry.target.getAttribute('id');
-    const menuLink = document.querySelector(`.nav__list a[href="#${id}"]`);
-    if (entry.isIntersecting) {
-      document.querySelector('.nav__link--selected').classList.remove('nav__link--selected');
-      menuLink.classList.add('nav__link--selected');
+  const fetchApi = async () => {
+    try {
+      const options = {
+        method,
+        url
+      };
+      const response = await axios(options);
+      const portafolio = response.data;
+      header();
+      profile(portafolio.profile, portafolio.technologies);
+      experiences(portafolio.experiences);
+      projects(portafolio.projects);
+      skills(portafolio.skills);
+      footer(portafolio.contacts, portafolio.profile);
+    } catch (error) {
+      console.log(error);
     }
-  });
-}, { rootMargin: '-30% 0px -70% 0px' });
+  };
+  fetchApi();
 
-menuLinks.forEach(menuLink => {
-  menuLink.addEventListener('click', () => {
-    menu.classList.remove('nav__list--opened');
-  });
+};
 
-  const hash = menuLink.getAttribute('href');
-  const target = document.querySelector(hash);
-  if (target) {
-    observer.observe(target);
-  }
-});
+document.addEventListener('DOMContentLoaded', documentReady);
