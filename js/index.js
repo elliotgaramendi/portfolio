@@ -9,7 +9,7 @@ import footer from './footer.js';
 const documentReady = () => {
 
   const method = 'GET';
-  const url = 'https://elliotxleo.github.io/api-publica/json/portafolio-elliot.json';
+  const url = 'https://elliotxleo.github.io/api-json-public/json/portafolio-elliot.json';
 
   const fetchApi = async () => {
     try {
