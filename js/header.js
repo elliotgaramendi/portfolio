@@ -1,5 +1,3 @@
-'use strict';
-
 const header = () => {
   const header = document.querySelector('.header');
   const headerNav = document.querySelector('.header-nav');

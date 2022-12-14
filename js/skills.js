@@ -1,5 +1,3 @@
-'use strict';
-
 const skills = ({ skills }) => {
   const skillsSkillsList = document.getElementById('skillsSkillsList');
 

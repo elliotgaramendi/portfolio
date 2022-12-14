@@ -1,5 +1,3 @@
-'use strict';
-
 const footer = ({ contacts, profile }) => {
   const footerNavLinkList = document.querySelector('.footer-nav__link-list');
   contacts.forEach((element) => {

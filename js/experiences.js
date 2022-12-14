@@ -1,5 +1,3 @@
-'use strict';
-
 const experiences = ({ experiences }) => {
   const experiencesExperiences = document.getElementById('experiencesExperiences');
 

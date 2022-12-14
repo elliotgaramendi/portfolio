@@ -1,5 +1,3 @@
-'use strict';
-
 const projects = ({ projects }) => {
   const projectsProjects = document.getElementById('projectsProjects');
 

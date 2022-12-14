@@ -1,5 +1,3 @@
-'use strict';
-
 const profile = ({ profile, technologies }) => {
   const { name, shortName, slogan, description, urlPhoto, urlCv } = profile;
 
