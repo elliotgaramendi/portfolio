@@ -1,6 +1,6 @@
 'use strict';
 
-const projects = (projects) => {
+const projects = ({ projects }) => {
   const projectsProjects = document.getElementById('projectsProjects');
 
   const projectsPrincipales = projects.filter((element) => {

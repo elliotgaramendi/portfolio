@@ -1,6 +1,6 @@
 'use strict';
 
-const experiences = (experiences) => {
+const experiences = ({ experiences }) => {
   const experiencesExperiences = document.getElementById('experiencesExperiences');
 
   [...experiences].reverse().forEach((element) => {

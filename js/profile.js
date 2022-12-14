@@ -1,6 +1,6 @@
 'use strict';
 
-const profile = (profile, technologies) => {
+const profile = ({ profile, technologies }) => {
   const { name, shortName, slogan, description, urlPhoto, urlCv } = profile;
 
   const profileInfo = document.querySelector('.profile__info');
@@ -11,7 +11,7 @@ const profile = (profile, technologies) => {
   const profileInfoDescription = document.querySelector('.profile__info-description');
   const profileInfoLinkCV = document.getElementById('profileInfoLinkCV');
   const profileInfoLinkProjects = document.getElementById('profileInfoLinkProjects');
-  
+
   const profileFigureImage = document.querySelector('.profile__figure-image');
   const profileFigureTechOne = document.querySelector('.profile__figure-tech-one');
   const profileFigureTechTwo = document.querySelector('.profile__figure-tech-two');
@@ -24,7 +24,7 @@ const profile = (profile, technologies) => {
   profileInfoLinkCV.innerHTML = 'CV';
   profileInfoLinkCV.href = urlCv;
   profileInfoLinkProjects.innerHTML = 'Proyectos';
-  
+
   profileFigureImage.src = urlPhoto;
   profileFigureImage.alt = shortName;
   profileFigureTechOne.src = technologies[0].image;

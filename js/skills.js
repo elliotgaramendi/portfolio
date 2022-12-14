@@ -1,6 +1,6 @@
 'use strict';
 
-const skills = (skills) => {
+const skills = ({ skills }) => {
   const skillsSkillsList = document.getElementById('skillsSkillsList');
 
   skills.forEach((element) => {

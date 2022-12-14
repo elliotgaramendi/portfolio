@@ -1,8 +1,8 @@
 'use strict';
 
-const footer = (contactos, profile) => {
+const footer = ({ contacts, profile }) => {
   const footerNavLinkList = document.querySelector('.footer-nav__link-list');
-  contactos.forEach((element) => {
+  contacts.forEach((element) => {
     if (element.main === 1) {
       footerNavLinkList.innerHTML += `
         <li class="footer-nav__link-item">
