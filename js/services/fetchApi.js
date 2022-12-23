@@ -4,7 +4,7 @@ export const fetchReadElliotGaramendi = async () => {
   try {
     const options = {
       method: 'GET',
-      url: '/json/portafolio-elliot.json'
+      url: '/json/elliotgaramendi.json'
     };
     const { data } = await axiosInstance(options);
     return data;
