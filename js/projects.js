@@ -6,7 +6,7 @@ const projects = ({ projects }) => {
   });
 
   projectsPrincipales.reverse().forEach((element) => {
-    const { image, title, mainTechnology, technologies, about, urlDemo, urlCode } = element;
+    const { image, title, mainTechnology, technologies, about, urlDemo } = element;
     projectsProjects.innerHTML += `
         <article class="projects__project">
           <figure class="projects__project-image-container">
@@ -19,8 +19,7 @@ const projects = ({ projects }) => {
             <p class="projects__project-data-about">${about}</p>
           </div>
           <div class="projects__project-button-container">
-            <a href="${urlDemo}" class="projects__project-button projects__project-button--bg-gold">Demo</a>
-            <a href="${urlCode}" class="projects__project-button">Código</a>
+            <a href="${urlDemo}" class="projects__project-button projects__project-button--bg-gold">Ver</a>
           </div>
         </article>
       `;
